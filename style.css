@@ -53,6 +53,7 @@ a:hover {
     text-decoration: underline;
     text-underline-offset: 1rem;
     text-decoration-color: rgb(181, 181, 181);
+    cursor: pointer;
 }
 
 .logo {
@@ -168,10 +169,6 @@ section {
     min-height: fit-content;
     margin-left: 2rem;
     margin-right: 2rem;
-}
-
-.section-container {
-    display: flex;
 }
 
 /* Profile section */
@@ -317,13 +314,17 @@ section {
     cursor: pointer;
 }
 
+.not-interactive {
+    cursor: auto;
+}
+
 /* About Section */
 
 #about {
     margin-top: 9rem;
     position: relative;
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     margin-bottom: 10rem;
 }
 
@@ -361,6 +362,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     flex: 1;
     border-radius: 2rem;
     border: rgb(55, 55, 55) 0.1rem solid;
@@ -388,8 +390,10 @@ section {
 
 .experience-details-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
 
 .article-container {
@@ -411,4 +415,55 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+}
+
+/* Projects */
+
+#projects {
+    position: relative;
+}
+
+.project-img {
+    max-width: 150px;
+}
+
+.project-container {
+    max-width: 20vw;
+}
+
+.project-img-container {
+    display: flex;
+    max-height: 150px;
+    margin: auto 0;
+}
+
+.project-description {
+    flex: auto auto auto;
+}
+
+/* Contact */
+
+#contact {
+    height: 50vh;
+}
+
+.contact-container {
+    margin-top: 4rem;
+    height: fit-content;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.small-gap {
+    gap: 0.5rem;
+}
+
+.text-link {
+    transition: all 300ms ease;
+    color: black;
+}
+
+.text-link:hover {
+    color: grey;
+    cursor: pointer;
 }
