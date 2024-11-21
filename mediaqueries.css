@@ -1,0 +1,9 @@
+/* Mobile */
+@media screen and (max-width: 1200px) {
+    #desktop_nav {
+        display: none;
+    }
+    #mobile_nav {
+        display: flex;
+    }
+}
