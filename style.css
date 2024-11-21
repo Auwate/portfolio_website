@@ -208,10 +208,12 @@ section {
 
 .section__text__p1 {
     font-size: min(2vw, 2.3rem);
+    margin: 0;
 }
 
 .title {
     font-size: 3.2vw;
+    margin: 0;
 }
 
 .section__text__p2 {
@@ -408,4 +410,5 @@ section {
 .bullet-point-details {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
 }
