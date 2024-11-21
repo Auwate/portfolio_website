@@ -39,7 +39,7 @@ a, .btn {
 .nav_links {
     gap: 2rem;
     list-style: none;
-    font-size: min(2rem, 11vw);
+    font-size: min(1.4rem, 11vw);
 }
 
 a {
@@ -56,7 +56,7 @@ a:hover {
 }
 
 .logo {
-    font-size: min(3rem, 10vw);
+    font-size: min(2.5rem, 10vw);
 }
 
 .logo:hover {
@@ -71,6 +71,7 @@ a:hover {
 
 .mobile_menu {
     display: flex;
+    z-index: 2;
 }
 
 .mobile_hamburger_icon {
@@ -128,7 +129,7 @@ a:hover {
 .mobile_links a {
     text-align: center;
     text-decoration: none;
-    font-size: 4vw;
+    font-size: 3vw;
     width: fit-content;
     color: black;
     transition: all 0.3 ease-in-out;
@@ -181,14 +182,14 @@ section {
     justify-content: center;
     gap: min(5rem, 7vw);
     height: 60vh;
-    margin-top: 9rem;
+    margin-top: 4rem;
     margin-bottom: 9rem;
 }
 
 .section__pic-container {
     display: flex;
     height: 50vw;
-    max-height: 800px;
+    max-height: 400px;
     margin: auto 0;
 }
 
@@ -211,19 +212,26 @@ section {
 }
 
 .title {
-    font-size: 4vw;
+    font-size: 3.2vw;
     margin-bottom: 1rem;
 }
 
 .section__text__p2 {
-    font-size: 3vw;
+    font-size: min(2vw, 2.6rem);
     margin-bottom: 2rem;
+}
+
+.section_text__p3 {
+    font-size: min(2vw, 1.7rem);
+    margin-bottom: 1rem;
 }
 
 .arrow {
     position: absolute;
     right: 0;
     bottom: 0;
+    max-width: 30px;
+    max-height: 30px;
     transition: transform 500ms ease-in-out;
     animation: arrowUpAndDown 2s infinite;
 }
@@ -253,7 +261,7 @@ section {
     width: 11vw;
     max-width: min(15rem, 15vw);
     border-radius: 2rem;
-    font-size: min(2vw, 1.5rem);
+    font-size: min(1.7vw, 1rem);
 }
 
 .btn-color-1, .btn-color-2 {
@@ -294,8 +302,8 @@ section {
     display: flex;
     width: 6vw;
     height: 6vw;
-    max-height: 4rem;
-    max-width: 4rem;
+    max-height: 2rem;
+    max-width: 2rem;
     cursor: pointer;
 }
 
@@ -314,22 +322,22 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5rem;
-    margin-top: 30rem;
+    margin-bottom: 1rem;
+    margin-top: 8rem;
 }
 
 .section-container {
     display: flex;
     justify-content: center;
-    gap: 9rem;
+    gap: 5rem;
     height: 80%;
 }
 
 .about-containers {
     display: flex;
     justify-content: center;
-    gap: 6rem;
-    margin-bottom: 4rem;
+    gap: 2rem;
+    margin-bottom: 2rem;
     margin-top: 2rem;
 }
 
@@ -346,7 +354,7 @@ section {
     border-radius: 2rem;
     border: rgb(55, 55, 55) 0.1rem solid;
     text-align: center;
-    max-width: 23vw;
+    max-width: 30vw;
 }
 
 .section__description {
@@ -363,7 +371,7 @@ section {
 .experience-sub-title {
     color: rgb(55, 55, 55);
     font-weight: 600;
-    font-size: 1.75rem;
+    font-size: 1.3rem;
     margin-bottom: 2rem;
 }
 
