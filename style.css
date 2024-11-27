@@ -72,7 +72,7 @@ a:hover {
 
 .mobile_menu {
     display: flex;
-    z-index: 2;
+    z-index: 0;
 }
 
 .mobile_hamburger_icon {
@@ -80,11 +80,11 @@ a:hover {
     display: flex;
     flex-direction: column;
 
-    height: 40px;
-    width: 54px;
+    height: 30px;
+    width: 30px;
 
     cursor: pointer;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .mobile_hamburger_icon span {
@@ -141,7 +141,7 @@ a:hover {
 }
 
 .mobile_icon_open span:first-child {
-    transform: rotate(45deg) translate(10px, 17px);
+    transform: translate(-10px, 17px) rotate(45deg);
 }
 
 .mobile_icon_open span:nth-child(2) {
@@ -149,7 +149,11 @@ a:hover {
 }
 
 .mobile_icon_open span:last-child {
-    transform: rotate(-45deg) translate(10px, -17px);
+    transform: translate(-10px, -17px) rotate(-45deg);
+}
+
+.cover-background {
+    z-index: 2;
 }
 
 .mobile_open {
@@ -185,13 +189,12 @@ section {
 
 .section__pic-container {
     display: flex;
-    height: 50vw;
-    max-height: 400px;
     margin: auto 0;
 }
 
 .section__pic-container img {
     border-radius: 15%;
+    width: 400px;
 }
 
 .section__text {
@@ -224,12 +227,12 @@ section {
 }
 
 .section_text__p4 {
-    font-size: min(2vw, 0.9rem);
+    font-size: min(2vw, 0.8rem);
     margin-bottom: 1rem;
 }
 
 .section_text__h3 {
-    font-size: min(2vw, 1rem);
+    font-size: min(2vw, 0.8rem);
     font-weight: 800;
 }
 
@@ -334,7 +337,7 @@ section {
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
-    margin-top: 8rem;
+    margin-top: 15vw;
 }
 
 .section-container {
@@ -381,6 +384,10 @@ section {
     position: relative;
 }
 
+#experience .section-header {
+    margin-top: 16vw;
+}
+
 .experience-sub-title {
     color: rgb(55, 55, 55);
     font-weight: 600;
@@ -398,6 +405,7 @@ section {
 
 .article-container {
     display: flex;
+    width: 100%;
     text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
@@ -421,6 +429,10 @@ section {
 
 #projects {
     position: relative;
+}
+
+#projects .section-header {
+    margin-top: 15vw;
 }
 
 .project-img {
@@ -454,6 +466,10 @@ section {
     justify-content: space-around;
 }
 
+.contact-container p {
+    font-size: 0.9rem;
+}
+
 .small-gap {
     gap: 0.5rem;
 }
@@ -466,4 +482,10 @@ section {
 .text-link:hover {
     color: grey;
     cursor: pointer;
+}
+
+/* Footer */
+
+footer li {
+    font-size: min(3.4vw, 20px);
 }
