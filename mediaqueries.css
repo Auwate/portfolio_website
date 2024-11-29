@@ -29,9 +29,8 @@
         transform: translate(-8px, -18px) rotate(-45deg);
     }
 
-    .mobile-links {
-        max-width: auto;
-        max-height: 100vh;
+    .mobile_links {
+        z-index: -1;
     }
 
     /* Profile */
@@ -202,6 +201,10 @@
 
     /* Contact */
 
+    #contact {
+        position: relative;
+    }
+
     .contact-container {
         display: flex;
         flex-direction: column;
@@ -220,6 +223,12 @@
 
     #contact p {
         font-size: 1.6rem;
+    }
+
+    /* Footer */
+
+    footer {
+        position: relative;
     }
 
 }
@@ -370,6 +379,11 @@
 
     #contact p {
         font-size: 0.8rem;
+    }
+
+    #contact, footer {
+        position: relative;
+        z-index: 1; 
     }
 
 }
