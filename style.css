@@ -455,6 +455,12 @@ section {
     flex: auto auto auto;
 }
 
+.oversized {
+    max-height: 72%;
+    max-width: 100%;
+    align-self: center;
+}
+
 /* Contact */
 
 #contact {
